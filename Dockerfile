@@ -163,7 +163,7 @@ RUN set -xe && \
     mkdir -p /usr/local/share/GeoIP /usr/local/bin /usr/local/etc && \
     mv /tmp/geoipupdate_${VER_GEOIPUPDATE}_linux_amd64/geoipupdate /usr/local/bin/geoipupdate && \
     echo -ne "AccountID YOUR_ACCOUNT_ID_HERE\nLicenseKey YOUR_LICENSE_KEY_HERE\n" > /usr/local/etc/GeoIP.conf && \
-    echo -ne "EditionIDs GeoLite2-Country GeoLite2-City\nPreserveFileTimes 2\n" >> /usr/local/etc/GeoIP.conf
+    echo -ne "EditionIDs GeoLite2-Country GeoLite2-City\nPreserveFileTimes 1\n" >> /usr/local/etc/GeoIP.conf
 
 # Install Plowshare
 RUN set -xe && \
